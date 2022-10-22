@@ -1,0 +1,25 @@
+@import '../../scss/config'; 
+ 
+header {
+	background: lighten($primary-color, 10);
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+	padding: 0.65rem 1rem;
+	display: flex;
+	align-items: center;
+
+	.site-icon {
+	   color: set-text-color($secondary-color);
+	   width: 2.5rem;
+	   height: 2.5rem;
+	}
+	.hdr-site-text {
+	   margin-left: 0.75rem;
+	   margin-right: auto;
+	   font-size: 1.5rem;
+	}
+	.hdr-side-text {
+	   font-size: 1rem;
+	}
+ }

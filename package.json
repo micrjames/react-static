@@ -1,24 +1,42 @@
 {
-  "name": "framework",
+  "name": "react-static",
   "version": "0.1.0",
-  "description": "A basic framework upon which to build a web app.",
-  "main": "index.js",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.6.0",
+    "react-router-dom": "^6.4.2",
+    "react-scripts": "5.0.1",
+    "router-dom": "^2.2.9",
+    "sass": "^1.55.0",
+    "web-vitals": "^2.1.4"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "author": "me",
-  "license": "ISC",
-  "devDependencies": {
-    "browser-sync": "^2.27.7",
-    "del": "^6.0.0",
-    "gulp": "^4.0.2",
-    "gulp-postcss": "^9.0.1",
-    "gulp-sass": "^5.0.0",
-    "gulp-sourcemaps": "^3.0.0",
-    "sass": "^1.43.4"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
-  "keywords": [
-    "search",
-    "app"
-  ]
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }

@@ -1,0 +1,19 @@
+@import '../../scss/config';
+
+footer {
+    padding: 1.05rem;
+    display: block;
+    width: 100vw;
+    position: fixed;
+	bottom: 0;
+    background: lighten($primary-color, 10);
+    .footer-content {
+         display: flex;
+		 justify-content: flex-end;
+		 align-items: center;
+		 &__signature {
+			font-size: 1rem;
+			padding-right: 0.75rem;
+		 }
+    }
+}          
